@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+    <h1>University Admission form</h1>
+    <form action="" Method="post" >
+        <fieldset style:border="1px">
+            <legend>Personal Information</legend>
+        <p>Name:<input type="text" name="name"><br>
+            <label for="birthday">Date of Birth:</label>
+         <input type="date" id="birthday" name="birthday"><br>
+          Gender:<input type="radio" name="gender" value="Male">Male
+            <input type="radio" name="gender" value="Female">Female<br>
+            Email:<input type="text" name="email"><br>
+            Contact Number:<input type="text" name="Contact"> <br>
+            Address:<textarea name="Address" rows="5" cols="50" placeholder="Enter your address" maxlength="500"></textarea><br>  
+            </p>
+        </fieldset>
+        <fieldset style:border="1px">
+            <legend>Academic Details</legend>
+            <p>High School Name:<input type="text" name="HSname"><br>
+               Years of Graduation:<input type="text" name="year of graduation"><br>
+               GPA:<input type="text" name="gpa" size="10"><br>
+               Intended Major <select name="dropdown_name">
+                <option value="value1" >Select Major</option>
+                <option value="value2" >Computer Science and Engineering</option>
+                <option value="value3" >Electronics and Communication Engineering </option>
+                <option value="value4" >Civil Engineering</option>
+                <option value="value5" >Mechnical Engineering</option>   
+               </select>
+               <br>
+                Upload Transcript: <label for="fileUpload">Choose File:</label> 
+            <input type="file" id="fileUpload" name="myfile" accept=".jpg,.png,.pdf" multiple required>
+           </p>
+        </fieldset>
+        <fieldset style:border="1px">
+            <legend>Additional Information</legend>
+            <p>
+                Extracurricular Activites<textarea name="Extracurricular Activites" rows="5" cols="50"  maxlength="500"></textarea><br>  
+                Do you need scholarship? <input type="checkbox" name="scholarship"> Yes<br>
+                Agree to Terms:<input type="checkbox" name="T&C">
+            </p>
+        </fieldset><button type="submit">Submit Application</button>
+
+    </form>
+</body>
+</html>
